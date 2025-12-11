@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | WHO_AM_I</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* 深灰背景，护眼 */
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 12px;
+            background-color: #252525;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-family: 'Courier New', monospace; /*稍微保留一点技术感*/
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #007AFF; /* 简洁蓝 */
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .download-btn:hover {
+            background-color: #0062cc;
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+
+        .meta {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>WHO_AM_I</h1>
+        <div class="subtitle">File: I_AM_xxxxxxx.mp4</div>
+
+        <a href="evidence.mp4" download="I_AM_xxxxxxx.mp4" class="download-btn">
+            下载犯罪证据
+        </a>
+    </div>
+
+</body>
+</html>
